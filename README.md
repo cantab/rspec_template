@@ -13,23 +13,23 @@ Clone this git repository
 go into the new app directory
 
   	cd rspec_template
-  	
+
 install the RSpec gem
 
   	bundle install
-  	
+
 you may also need to install the rspec binary
 
 	bundle binstubs rspec-core
 
-###Installing Gems
+### Installing Gems
 
 Add any gems the project requires in the Gemfile, then run
 
   	bundle install
-  	
-###Writing Examples
-  	
+
+### Writing Examples
+
 Write your tests in separate example files in the spec/ directory. The name of each example file must end with _spec.rb for RSpec to pick it up.
 
 I've put a sample example file in spec/changeme_spec.rb to start you off, and you can put your examples there to start with.
@@ -38,7 +38,7 @@ You can rename this file to whatever you like, but remember the filename must en
 
 As you continue developing your project, you may find it more sensible to split your examples into separate files in the /spec directory.
 
-###Writing Code
+### Writing Code
 
 Write your code in separate code files in the lib/ directory. The name of each code file must have an .rb extension for your tests and code to work.
 
@@ -48,7 +48,7 @@ You can rename this file to whatever you like, but remember the filename must en
 
 As you continue developing your project, you may find it more sensible to split your code into separate files in the lib/ directory; just make sure each of these files is required in the spec_helper file (see below), so that your tests can run properly.
 
-###Spec Helper File
+### Spec Helper File
 
 If you open the example file, you will see a line "require 'spec\_helper'" at the top of each file. This loads the spec/spec\_helper.rb file. At the top of the spec_helper.rb file, each of the code files is required. This allows the correct environment to be set up for the examples to run.
 
@@ -56,14 +56,14 @@ If you add further code files (see above), make sure you add the corresponding "
 
 You can also add any other setup you need to run that is relevant for all examples in the spec_helper.rb file.
 
-###Running Your Examples
+### Running Your Examples
 
   	bundle exec rspec spec
-  	
+
 or
 
 	rake spec
-  	
+
 ## Contact
 
 Comments, patches, Git pull requests and bug reports are welcome.
